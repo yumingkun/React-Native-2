@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import {
     StyleSheet,
     Text,
@@ -9,18 +10,24 @@ import {
 type Props = {};
 
 export default class App extends Component<Props> {
+    static navigationOptions = {
+        title: '主页',
+
+    };
     render() {
         const {navigation} =this.props;
         return (
             <View style={styles.container}>
-                <Text>HomePage</Text>
                 <Button
-                    title="go to page1"
-                    onPress={()=>navigation.navigate('Page1')}
+                    title="go to TabNav"
+                    onPress={()=>navigation.navigate('TabNav')}
                 />
+
+                <Text/>
+
                 <Button
-                    title="go to page2"
-                    onPress={()=>navigation.navigate('Page2')}
+                    title="go to DrawerNav"
+                    onPress={()=>navigation.navigate('DrawerNav')}
                 />
             </View>
         );
@@ -32,16 +39,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#ffffaa',
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-    },
+        backgroundColor: '#e5fffd',
+    }
 });

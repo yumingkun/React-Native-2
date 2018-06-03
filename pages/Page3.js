@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import {
     StyleSheet,
@@ -7,15 +8,15 @@ import {
 } from 'react-native';
 
 
+
 type Props = {};
-export default class Page1 extends Component<Props> {
+export default class Page2 extends Component<Props> {
 
     render() {
         const {navigation}=this.props;
         return (
             <View style={styles.container}>
-
-                <Text>欢迎来到page1</Text>
+                <Text>欢迎来到page3</Text>
             </View>
         );
     }
