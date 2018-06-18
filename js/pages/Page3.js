@@ -10,7 +10,7 @@ import {
 
 
 type Props = {};
-export default class Page2 extends Component<Props> {
+export default class Page3 extends Component<Props> {
 
     render() {
         const {navigation}=this.props;
